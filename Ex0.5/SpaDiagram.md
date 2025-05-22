@@ -4,7 +4,7 @@ sequenceDiagram
     participant server
 
         Note right of browser: This is after the user types the text and press the save button
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
         Note right of browser: As it is a POST request, the content is in the request body
     server-->>browser: HTTP Status code 302, Location "/notes"
